@@ -1,0 +1,1364 @@
+Microsoft Windows [Version 10.0.17134.753]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Users\Mr Shmutz>cd C:\Users\Mr Shmutz\Documents\GitHub\storm-tech-test-netcore
+
+C:\Users\Mr Shmutz\Documents\GitHub\storm-tech-test-netcore>dotnet build
+Microsoft (R) Build Engine version 15.9.20+g88f5fadfbe for .NET Core
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Restoring packages for C:\Users\Mr Shmutz\Documents\GitHub\storm-tech-test-netcore\Todo.Tests\Todo.Tests.csproj...
+  Restore completed in 80.83 ms for C:\Users\Mr Shmutz\Documents\GitHub\storm-tech-test-netcore\Todo\Todo.csproj.
+  Generating MSBuild file C:\Users\Mr Shmutz\Documents\GitHub\storm-tech-test-netcore\Todo.Tests\obj\Todo.Tests.csproj.nuget.g.props.
+  Restore completed in 1.99 sec for C:\Users\Mr Shmutz\Documents\GitHub\storm-tech-test-netcore\Todo.Tests\Todo.Tests.csproj.
+  Todo -> C:\Users\Mr Shmutz\Documents\GitHub\storm-tech-test-netcore\Todo\bin\Debug\netcoreapp2.1\Todo.dll
+  Todo -> C:\Users\Mr Shmutz\Documents\GitHub\storm-tech-test-netcore\Todo\bin\Debug\netcoreapp2.1\Todo.Views.dll
+  Todo.Tests -> C:\Users\Mr Shmutz\Documents\GitHub\storm-tech-test-netcore\Todo.Tests\bin\Debug\netcoreapp2.1\Todo.Tests.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:09.41
+
+C:\Users\****\Documents\GitHub\storm-tech-test-netcore>dotnet run --project Todo
+Using launch settings from Todo\Properties\launchSettings.json...
+info: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[0]
+      User profile is available. Using 'C:\Users\****\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+Hosting environment: Development
+Content root path: C:\Users\****\Documents\GitHub\storm-tech-test-netcore\Todo
+Now listening on: http://localhost:52627
+Application started. Press Ctrl+C to shut down.
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:52627/
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Todo.Controllers.HomeController (Todo).
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Todo.Controllers.HomeController.Index (Todo) - Validation state: Valid
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method Todo.Controllers.HomeController.Index (Todo), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 0.2623ms.
+info: Microsoft.AspNetCore.Mvc.RedirectToActionResult[1]
+      Executing RedirectResult, redirecting to /TodoList.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Todo.Controllers.HomeController.Index (Todo) in 15.0297ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 240.4191ms 302
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:52627/TodoList
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Route matched with {action = "Index", controller = "TodoList", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Todo.Controllers.TodoListController (Todo).
+info: Microsoft.AspNetCore.Authorization.DefaultAuthorizationService[2]
+      Authorization failed.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+info: Microsoft.AspNetCore.Mvc.ChallengeResult[1]
+      Executing ChallengeResult with authentication schemes ().
+info: Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler[12]
+      AuthenticationScheme: Identity.Application was challenged.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Todo.Controllers.TodoListController.Index (Todo) in 12.7769ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 15.6298ms 302
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:52627/Identity/Account/Login?ReturnUrl=%2FTodoList
+info: Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker[1]
+      Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing action /Account/Login
+info: Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker[101]
+      Executing handler method OnGetAsync - ModelState is Valid
+info: Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler[11]
+      AuthenticationScheme: Identity.External signed out.
+info: Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker[2]
+      Executed action /Account/Login in 337.999ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 379.9208ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:52627/lib/bootstrap/dist/css/bootstrap.css
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:52627/css/site.css
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:52627/lib/jquery/dist/jquery.js
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:52627/lib/bootstrap/dist/js/bootstrap.js
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.css'. Physical path: 'C:\Users\****\Documents\GitHub\storm-tech-test-netcore\Todo\wwwroot\lib\bootstrap\dist\css\bootstrap.css'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\****\Documents\GitHub\storm-tech-test-netcore\Todo\wwwroot\css\site.css'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:52627/Identity/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/Identity/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js'. Physical path: 'N/A'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 0.8325ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 37.4657ms 200 text/css
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 39.5579ms 200 text/css
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:52627/Identity/lib/jquery-validation/dist/jquery.validate.js
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:52627/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/js/site.js'. Physical path: 'C:\Users\****\Documents\GitHub\storm-tech-test-netcore\Todo\wwwroot\js\site.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 0.7524ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.js'. Physical path: 'C:\Users\****\Documents\GitHub\storm-tech-test-netcore\Todo\wwwroot\lib\bootstrap\dist\js\bootstrap.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 35.0685ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/Identity/lib/jquery-validation/dist/jquery.validate.js'. Physical path: 'N/A'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 0.9535ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/jquery/dist/jquery.js'. Physical path: 'C:\Users\****\Documents\GitHub\storm-tech-test-netcore\Todo\wwwroot\lib\jquery\dist\jquery.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 78.1408ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:52627/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2'. Physical path: 'C:\Users\****\Documents\GitHub\storm-tech-test-netcore\Todo\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 6.4801ms 200 font/woff2
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:52627/Identity/Account/Register?returnUrl=%2FTodoList
+info: Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker[1]
+      Route matched with {page = "/Account/Register", area = "Identity", action = "", controller = ""}. Executing action /Account/Register
+info: Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker[101]
+      Executing handler method OnGet - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker[2]
+      Executed action /Account/Register in 33.3211ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 38.8623ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:52627/Identity/Account/Register?returnUrl=%2FTodoList application/x-www-form-urlencoded 271
+info: Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker[1]
+      Route matched with {page = "/Account/Register", area = "Identity", action = "", controller = ""}. Executing action /Account/Register
+info: Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker[101]
+      Executing handler method OnPostAsync - ModelState is Valid
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.1.11-servicing-32099 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      PRAGMA foreign_keys=ON;
+fail: Microsoft.EntityFrameworkCore.Database.Command[20102]
+      Failed executing DbCommand (6ms) [Parameters=[@__normalizedUserName_0='?' (Size = 15)], CommandType='Text', CommandTimeout='30']
+      SELECT "u"."Id", "u"."AccessFailedCount", "u"."ConcurrencyStamp", "u"."Email", "u"."EmailConfirmed", "u"."LockoutEnabled", "u"."LockoutEnd", "u"."NormalizedEmail", "u"."NormalizedUserName", "u"."PasswordHash", "u"."PhoneNumber", "u"."PhoneNumberConfirmed", "u"."SecurityStamp", "u"."TwoFactorEnabled", "u"."UserName"
+      FROM "AspNetUsers" AS "u"
+      WHERE "u"."NormalizedUserName" = @__normalizedUserName_0
+      LIMIT 1
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: AspNetUsers'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+fail: Microsoft.EntityFrameworkCore.Query[10100]
+      An exception occurred in the database while iterating the results of a query for context type 'Todo.Data.ApplicationDbContext'.
+      Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: AspNetUsers'.
+         at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+         at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements(Stopwatch timer)+MoveNext()
+         at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+         at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+         at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+         at System.Linq.AsyncEnumerable.FirstOrDefault_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+         at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+         at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: AspNetUsers'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.FirstOrDefault_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+fail: Microsoft.EntityFrameworkCore.Query[10100]
+      An exception occurred in the database while iterating the results of a query for context type 'Todo.Data.ApplicationDbContext'.
+      Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: AspNetUsers'.
+         at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+         at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements(Stopwatch timer)+MoveNext()
+         at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+         at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+         at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+         at System.Linq.AsyncEnumerable.FirstOrDefault_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+         at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+         at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteSingletonAsyncQuery[TResult](QueryContext queryContext, Func`2 compiledQuery, IDiagnosticsLogger`1 logger, Type contextType)
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: AspNetUsers'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.FirstOrDefault_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteSingletonAsyncQuery[TResult](QueryContext queryContext, Func`2 compiledQuery, IDiagnosticsLogger`1 logger, Type contextType)
+info: Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker[2]
+      Executed action /Account/Register in 423.206ms
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      PRAGMA foreign_keys=ON;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      PRAGMA foreign_keys=ON;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      PRAGMA foreign_keys=ON;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 471.3329ms 500 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:52627/Identity/Account/Register?returnUrl=%2FTodoList
+info: Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker[1]
+      Route matched with {page = "/Account/Register", area = "Identity", action = "", controller = ""}. Executing action /Account/Register
+info: Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker[101]
+      Executing handler method OnGet - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker[2]
+      Executed action /Account/Register in 2.5973ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 2.8303ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:52627/Home/Privacy
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 0.4385ms 404
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:52627/Identity/Account/Register?returnUrl=%2FTodoList
+info: Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker[1]
+      Route matched with {page = "/Account/Register", area = "Identity", action = "", controller = ""}. Executing action /Account/Register
+info: Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker[101]
+      Executing handler method OnGet - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker[2]
+      Executed action /Account/Register in 2.4267ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 2.7882ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:52627/
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Todo.Controllers.HomeController (Todo).
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Todo.Controllers.HomeController.Index (Todo) - Validation state: Valid
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method Todo.Controllers.HomeController.Index (Todo), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 0.016ms.
+info: Microsoft.AspNetCore.Mvc.RedirectToActionResult[1]
+      Executing RedirectResult, redirecting to /TodoList.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Todo.Controllers.HomeController.Index (Todo) in 0.3044ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 0.6224ms 302
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:52627/TodoList
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Route matched with {action = "Index", controller = "TodoList", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Todo.Controllers.TodoListController (Todo).
+info: Microsoft.AspNetCore.Authorization.DefaultAuthorizationService[2]
+      Authorization failed.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+info: Microsoft.AspNetCore.Mvc.ChallengeResult[1]
+      Executing ChallengeResult with authentication schemes ().
+info: Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler[12]
+      AuthenticationScheme: Identity.Application was challenged.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Todo.Controllers.TodoListController.Index (Todo) in 0.283ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 0.4844ms 302
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:52627/Identity/Account/Login?ReturnUrl=%2FTodoList
+info: Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker[1]
+      Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing action /Account/Login
+info: Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker[101]
+      Executing handler method OnGetAsync - ModelState is Valid
+info: Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler[11]
+      AuthenticationScheme: Identity.External signed out.
+info: Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker[2]
+      Executed action /Account/Login in 2.0928ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 2.3262ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:52627/Identity/Account/Register?returnUrl=%2FTodoList
+info: Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker[1]
+      Route matched with {page = "/Account/Register", area = "Identity", action = "", controller = ""}. Executing action /Account/Register
+info: Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker[101]
+      Executing handler method OnGet - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker[2]
+      Executed action /Account/Register in 1.9247ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 2.1955ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:52627/Identity/Account/Register?returnUrl=%2FTodoList application/x-www-form-urlencoded 271
+info: Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker[1]
+      Route matched with {page = "/Account/Register", area = "Identity", action = "", controller = ""}. Executing action /Account/Register
+info: Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker[101]
+      Executing handler method OnPostAsync - ModelState is Valid
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.1.11-servicing-32099 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      PRAGMA foreign_keys=ON;
+fail: Microsoft.EntityFrameworkCore.Database.Command[20102]
+      Failed executing DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 15)], CommandType='Text', CommandTimeout='30']
+      SELECT "u"."Id", "u"."AccessFailedCount", "u"."ConcurrencyStamp", "u"."Email", "u"."EmailConfirmed", "u"."LockoutEnabled", "u"."LockoutEnd", "u"."NormalizedEmail", "u"."NormalizedUserName", "u"."PasswordHash", "u"."PhoneNumber", "u"."PhoneNumberConfirmed", "u"."SecurityStamp", "u"."TwoFactorEnabled", "u"."UserName"
+      FROM "AspNetUsers" AS "u"
+      WHERE "u"."NormalizedUserName" = @__normalizedUserName_0
+      LIMIT 1
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: AspNetUsers'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+fail: Microsoft.EntityFrameworkCore.Query[10100]
+      An exception occurred in the database while iterating the results of a query for context type 'Todo.Data.ApplicationDbContext'.
+      Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: AspNetUsers'.
+         at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+         at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements(Stopwatch timer)+MoveNext()
+         at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+         at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+         at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+         at System.Linq.AsyncEnumerable.FirstOrDefault_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+         at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+         at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: AspNetUsers'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.FirstOrDefault_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+fail: Microsoft.EntityFrameworkCore.Query[10100]
+      An exception occurred in the database while iterating the results of a query for context type 'Todo.Data.ApplicationDbContext'.
+      Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: AspNetUsers'.
+         at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+         at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements(Stopwatch timer)+MoveNext()
+         at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+         at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+         at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+         at System.Linq.AsyncEnumerable.FirstOrDefault_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+         at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+         at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteSingletonAsyncQuery[TResult](QueryContext queryContext, Func`2 compiledQuery, IDiagnosticsLogger`1 logger, Type contextType)
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: AspNetUsers'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.FirstOrDefault_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteSingletonAsyncQuery[TResult](QueryContext queryContext, Func`2 compiledQuery, IDiagnosticsLogger`1 logger, Type contextType)
+info: Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker[2]
+      Executed action /Account/Register in 28.3797ms
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      PRAGMA foreign_keys=ON;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      PRAGMA foreign_keys=ON;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      PRAGMA foreign_keys=ON;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 39.159ms 500 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:52627/ApplyDatabaseMigrations application/x-www-form-urlencoded 113
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.1.11-servicing-32099 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      PRAGMA foreign_keys=ON;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      PRAGMA foreign_keys=ON;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      PRAGMA foreign_keys=ON;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      PRAGMA foreign_keys=ON;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE "__EFMigrationsHistory" (
+          "MigrationId" TEXT NOT NULL CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY,
+          "ProductVersion" TEXT NOT NULL
+      );
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      PRAGMA foreign_keys=ON;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      PRAGMA foreign_keys=ON;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      PRAGMA foreign_keys=ON;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT "MigrationId", "ProductVersion"
+      FROM "__EFMigrationsHistory"
+      ORDER BY "MigrationId";
+info: Microsoft.EntityFrameworkCore.Migrations[20402]
+      Applying migration '00000000000000_CreateIdentitySchema'.
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      PRAGMA foreign_keys=ON;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE "AspNetRoles" (
+          "Id" TEXT NOT NULL CONSTRAINT "PK_AspNetRoles" PRIMARY KEY,
+          "Name" TEXT NULL,
+          "NormalizedName" TEXT NULL,
+          "ConcurrencyStamp" TEXT NULL
+      );
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE "AspNetUsers" (
+          "Id" TEXT NOT NULL CONSTRAINT "PK_AspNetUsers" PRIMARY KEY,
+          "UserName" TEXT NULL,
+          "NormalizedUserName" TEXT NULL,
+          "Email" TEXT NULL,
+          "NormalizedEmail" TEXT NULL,
+          "EmailConfirmed" INTEGER NOT NULL,
+          "PasswordHash" TEXT NULL,
+          "SecurityStamp" TEXT NULL,
+          "ConcurrencyStamp" TEXT NULL,
+          "PhoneNumber" TEXT NULL,
+          "PhoneNumberConfirmed" INTEGER NOT NULL,
+          "TwoFactorEnabled" INTEGER NOT NULL,
+          "LockoutEnd" TEXT NULL,
+          "LockoutEnabled" INTEGER NOT NULL,
+          "AccessFailedCount" INTEGER NOT NULL
+      );
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE "AspNetRoleClaims" (
+          "Id" INTEGER NOT NULL CONSTRAINT "PK_AspNetRoleClaims" PRIMARY KEY,
+          "RoleId" TEXT NOT NULL,
+          "ClaimType" TEXT NULL,
+          "ClaimValue" TEXT NULL,
+          CONSTRAINT "FK_AspNetRoleClaims_AspNetRoles_RoleId" FOREIGN KEY ("RoleId") REFERENCES "AspNetRoles" ("Id") ON DELETE CASCADE
+      );
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE "AspNetUserClaims" (
+          "Id" INTEGER NOT NULL CONSTRAINT "PK_AspNetUserClaims" PRIMARY KEY,
+          "UserId" TEXT NOT NULL,
+          "ClaimType" TEXT NULL,
+          "ClaimValue" TEXT NULL,
+          CONSTRAINT "FK_AspNetUserClaims_AspNetUsers_UserId" FOREIGN KEY ("UserId") REFERENCES "AspNetUsers" ("Id") ON DELETE CASCADE
+      );
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE "AspNetUserLogins" (
+          "LoginProvider" TEXT NOT NULL,
+          "ProviderKey" TEXT NOT NULL,
+          "ProviderDisplayName" TEXT NULL,
+          "UserId" TEXT NOT NULL,
+          CONSTRAINT "PK_AspNetUserLogins" PRIMARY KEY ("LoginProvider", "ProviderKey"),
+          CONSTRAINT "FK_AspNetUserLogins_AspNetUsers_UserId" FOREIGN KEY ("UserId") REFERENCES "AspNetUsers" ("Id") ON DELETE CASCADE
+      );
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE "AspNetUserRoles" (
+          "UserId" TEXT NOT NULL,
+          "RoleId" TEXT NOT NULL,
+          CONSTRAINT "PK_AspNetUserRoles" PRIMARY KEY ("UserId", "RoleId"),
+          CONSTRAINT "FK_AspNetUserRoles_AspNetRoles_RoleId" FOREIGN KEY ("RoleId") REFERENCES "AspNetRoles" ("Id") ON DELETE CASCADE,
+          CONSTRAINT "FK_AspNetUserRoles_AspNetUsers_UserId" FOREIGN KEY ("UserId") REFERENCES "AspNetUsers" ("Id") ON DELETE CASCADE
+      );
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE "AspNetUserTokens" (
+          "UserId" TEXT NOT NULL,
+          "LoginProvider" TEXT NOT NULL,
+          "Name" TEXT NOT NULL,
+          "Value" TEXT NULL,
+          CONSTRAINT "PK_AspNetUserTokens" PRIMARY KEY ("UserId", "LoginProvider", "Name"),
+          CONSTRAINT "FK_AspNetUserTokens_AspNetUsers_UserId" FOREIGN KEY ("UserId") REFERENCES "AspNetUsers" ("Id") ON DELETE CASCADE
+      );
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_AspNetRoleClaims_RoleId" ON "AspNetRoleClaims" ("RoleId");
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE UNIQUE INDEX "RoleNameIndex" ON "AspNetRoles" ("NormalizedName") WHERE [NormalizedName] IS NOT NULL;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_AspNetUserClaims_UserId" ON "AspNetUserClaims" ("UserId");
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_AspNetUserLogins_UserId" ON "AspNetUserLogins" ("UserId");
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_AspNetUserRoles_RoleId" ON "AspNetUserRoles" ("RoleId");
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "EmailIndex" ON "AspNetUsers" ("NormalizedEmail");
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE UNIQUE INDEX "UserNameIndex" ON "AspNetUsers" ("NormalizedUserName") WHERE [NormalizedUserName] IS NOT NULL;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+      VALUES ('00000000000000_CreateIdentitySchema', '2.1.11-servicing-32099');
+info: Microsoft.EntityFrameworkCore.Migrations[20402]
+      Applying migration '20181018104158_CreateTodoEntities'.
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      PRAGMA foreign_keys=ON;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DROP INDEX "UserNameIndex";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DROP INDEX "RoleNameIndex";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE "TodoLists" (
+          "TodoListId" INTEGER NOT NULL CONSTRAINT "PK_TodoLists" PRIMARY KEY AUTOINCREMENT,
+          "Title" TEXT NOT NULL,
+          "OwnerId" TEXT NULL,
+          CONSTRAINT "FK_TodoLists_AspNetUsers_OwnerId" FOREIGN KEY ("OwnerId") REFERENCES "AspNetUsers" ("Id") ON DELETE RESTRICT
+      );
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE "TodoItems" (
+          "TodoItemId" INTEGER NOT NULL CONSTRAINT "PK_TodoItems" PRIMARY KEY AUTOINCREMENT,
+          "Title" TEXT NULL,
+          "ResponsiblePartyId" TEXT NULL,
+          "IsDone" INTEGER NOT NULL,
+          "Importance" INTEGER NOT NULL,
+          "TodoListId" INTEGER NOT NULL,
+          CONSTRAINT "FK_TodoItems_AspNetUsers_ResponsiblePartyId" FOREIGN KEY ("ResponsiblePartyId") REFERENCES "AspNetUsers" ("Id") ON DELETE RESTRICT,
+          CONSTRAINT "FK_TodoItems_TodoLists_TodoListId" FOREIGN KEY ("TodoListId") REFERENCES "TodoLists" ("TodoListId") ON DELETE CASCADE
+      );
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE UNIQUE INDEX "UserNameIndex" ON "AspNetUsers" ("NormalizedUserName");
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE UNIQUE INDEX "RoleNameIndex" ON "AspNetRoles" ("NormalizedName");
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_TodoItems_ResponsiblePartyId" ON "TodoItems" ("ResponsiblePartyId");
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_TodoItems_TodoListId" ON "TodoItems" ("TodoListId");
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_TodoLists_OwnerId" ON "TodoLists" ("OwnerId");
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+      VALUES ('20181018104158_CreateTodoEntities', '2.1.11-servicing-32099');
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 141.9474ms 204
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:52627/Identity/Account/Register?returnUrl=%2FTodoList application/x-www-form-urlencoded 271
+info: Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker[1]
+      Route matched with {page = "/Account/Register", area = "Identity", action = "", controller = ""}. Executing action /Account/Register
+info: Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker[101]
+      Executing handler method OnPostAsync - ModelState is Valid
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.1.11-servicing-32099 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      PRAGMA foreign_keys=ON;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (5ms) [Parameters=[@__normalizedUserName_0='?' (Size = 15)], CommandType='Text', CommandTimeout='30']
+      SELECT "u"."Id", "u"."AccessFailedCount", "u"."ConcurrencyStamp", "u"."Email", "u"."EmailConfirmed", "u"."LockoutEnabled", "u"."LockoutEnd", "u"."NormalizedEmail", "u"."NormalizedUserName", "u"."PasswordHash", "u"."PhoneNumber", "u"."PhoneNumberConfirmed", "u"."SecurityStamp", "u"."TwoFactorEnabled", "u"."UserName"
+      FROM "AspNetUsers" AS "u"
+      WHERE "u"."NormalizedUserName" = @__normalizedUserName_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      PRAGMA foreign_keys=ON;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 36), @p1='?', @p2='?' (Size = 36), @p3='?' (Size = 15), @p4='?', @p5='?', @p6='?', @p7='?' (Size = 15), @p8='?' (Size = 15), @p9='?' (Size = 84), @p10='?', @p11='?', @p12='?' (Size = 32), @p13='?', @p14='?' (Size = 15)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "AspNetUsers" ("Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14);
+info: Microsoft.AspNetCore.Identity.UI.Pages.Account.Internal.LoginModel[0]
+      User created a new account with password.
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      PRAGMA foreign_keys=ON;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__user_Id_0='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+      SELECT "uc"."Id", "uc"."ClaimType", "uc"."ClaimValue", "uc"."UserId"
+      FROM "AspNetUserClaims" AS "uc"
+      WHERE "uc"."UserId" = @__user_Id_0
+info: Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler[10]
+      AuthenticationScheme: Identity.Application signed in.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.LocalRedirectResultExecutor[1]
+      Executing LocalRedirectResult, redirecting to /TodoList.
+info: Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker[2]
+      Executed action /Account/Register in 144.137ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 144.4204ms 302
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:52627/TodoList
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Route matched with {action = "Index", controller = "TodoList", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Todo.Controllers.TodoListController (Todo).
+info: Microsoft.AspNetCore.Authorization.DefaultAuthorizationService[1]
+      Authorization was successful.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Todo.Controllers.TodoListController.Index (Todo) - Validation state: Valid
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.1.11-servicing-32099 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      PRAGMA foreign_keys=ON;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+      SELECT "tl"."TodoListId", "tl"."OwnerId", "tl"."Title", "tl.Owner"."Id", "tl.Owner"."AccessFailedCount", "tl.Owner"."ConcurrencyStamp", "tl.Owner"."Email", "tl.Owner"."EmailConfirmed", "tl.Owner"."LockoutEnabled", "tl.Owner"."LockoutEnd", "tl.Owner"."NormalizedEmail", "tl.Owner"."NormalizedUserName", "tl.Owner"."PasswordHash", "tl.Owner"."PhoneNumber", "tl.Owner"."PhoneNumberConfirmed", "tl.Owner"."SecurityStamp", "tl.Owner"."TwoFactorEnabled", "tl.Owner"."UserName"
+      FROM "TodoLists" AS "tl"
+      LEFT JOIN "AspNetUsers" AS "tl.Owner" ON "tl"."OwnerId" = "tl.Owner"."Id"
+      WHERE "tl"."OwnerId" = @__userId_0
+      ORDER BY "tl"."TodoListId"
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method Todo.Controllers.TodoListController.Index (Todo), returned result Microsoft.AspNetCore.Mvc.ViewResult in 51.4891ms.
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor[1]
+      Executing ViewResult, running view Index.
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      PRAGMA foreign_keys=ON;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+      SELECT "e"."Id", "e"."AccessFailedCount", "e"."ConcurrencyStamp", "e"."Email", "e"."EmailConfirmed", "e"."LockoutEnabled", "e"."LockoutEnd", "e"."NormalizedEmail", "e"."NormalizedUserName", "e"."PasswordHash", "e"."PhoneNumber", "e"."PhoneNumberConfirmed", "e"."SecurityStamp", "e"."TwoFactorEnabled", "e"."UserName"
+      FROM "AspNetUsers" AS "e"
+      WHERE "e"."Id" = @__get_Item_0
+      LIMIT 1
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor[4]
+      Executed ViewResult - view Index executed in 37.4283ms.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Todo.Controllers.TodoListController.Index (Todo) in 90.7421ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 94.8584ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:52627/favicon.ico
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\****\Documents\GitHub\storm-tech-test-netcore\Todo\wwwroot\favicon.ico'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 4.7277ms 200 image/x-icon
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:52627/TodoList/Create
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Route matched with {action = "Create", controller = "TodoList", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller Todo.Controllers.TodoListController (Todo).
+info: Microsoft.AspNetCore.Authorization.DefaultAuthorizationService[1]
+      Authorization was successful.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Todo.Controllers.TodoListController.Create (Todo) - Validation state: Valid
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method Todo.Controllers.TodoListController.Create (Todo), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.1806ms.
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor[1]
+      Executing ViewResult, running view Create.
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.1.11-servicing-32099 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      PRAGMA foreign_keys=ON;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+      SELECT "e"."Id", "e"."AccessFailedCount", "e"."ConcurrencyStamp", "e"."Email", "e"."EmailConfirmed", "e"."LockoutEnabled", "e"."LockoutEnd", "e"."NormalizedEmail", "e"."NormalizedUserName", "e"."PasswordHash", "e"."PhoneNumber", "e"."PhoneNumberConfirmed", "e"."SecurityStamp", "e"."TwoFactorEnabled", "e"."UserName"
+      FROM "AspNetUsers" AS "e"
+      WHERE "e"."Id" = @__get_Item_0
+      LIMIT 1
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor[4]
+      Executed ViewResult - view Create executed in 23.7692ms.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Todo.Controllers.TodoListController.Create (Todo) in 24.1168ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 28.5421ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:52627/TodoList/Create application/x-www-form-urlencoded 245
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Route matched with {action = "Create", controller = "TodoList", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Todo.Models.TodoLists.TodoListFields) on controller Todo.Controllers.TodoListController (Todo).
+info: Microsoft.AspNetCore.Authorization.DefaultAuthorizationService[1]
+      Authorization was successful.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Todo.Controllers.TodoListController.Create (Todo) - Validation state: Valid
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.1.11-servicing-32099 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      PRAGMA foreign_keys=ON;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+      SELECT "e"."Id", "e"."AccessFailedCount", "e"."ConcurrencyStamp", "e"."Email", "e"."EmailConfirmed", "e"."LockoutEnabled", "e"."LockoutEnd", "e"."NormalizedEmail", "e"."NormalizedUserName", "e"."PasswordHash", "e"."PhoneNumber", "e"."PhoneNumberConfirmed", "e"."SecurityStamp", "e"."TwoFactorEnabled", "e"."UserName"
+      FROM "AspNetUsers" AS "e"
+      WHERE "e"."Id" = @__get_Item_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      PRAGMA foreign_keys=ON;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 36), @p1='?' (Size = 13)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "TodoLists" ("OwnerId", "Title")
+      VALUES (@p0, @p1);
+      SELECT "TodoListId"
+      FROM "TodoLists"
+      WHERE changes() = 1 AND "TodoListId" = last_insert_rowid();
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method Todo.Controllers.TodoListController.Create (Todo), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 59.3253ms.
+info: Microsoft.AspNetCore.Mvc.RedirectToActionResult[1]
+      Executing RedirectResult, redirecting to /TodoItem/Create?TodoListId=1.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Todo.Controllers.TodoListController.Create (Todo) in 63.9622ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 71.7243ms 302
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:52627/TodoItem/Create?TodoListId=1
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Route matched with {action = "Create", controller = "TodoItem", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create(Int32) on controller Todo.Controllers.TodoItemController (Todo).
+info: Microsoft.AspNetCore.Authorization.DefaultAuthorizationService[1]
+      Authorization was successful.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Todo.Controllers.TodoItemController.Create (Todo) - Validation state: Valid
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.1.11-servicing-32099 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      PRAGMA foreign_keys=ON;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__todoListId_0='?'], CommandType='Text', CommandTimeout='30']
+      SELECT "tl"."TodoListId", "tl"."OwnerId", "tl"."Title", "tl.Owner"."Id", "tl.Owner"."AccessFailedCount", "tl.Owner"."ConcurrencyStamp", "tl.Owner"."Email", "tl.Owner"."EmailConfirmed", "tl.Owner"."LockoutEnabled", "tl.Owner"."LockoutEnd", "tl.Owner"."NormalizedEmail", "tl.Owner"."NormalizedUserName", "tl.Owner"."PasswordHash", "tl.Owner"."PhoneNumber", "tl.Owner"."PhoneNumberConfirmed", "tl.Owner"."SecurityStamp", "tl.Owner"."TwoFactorEnabled", "tl.Owner"."UserName"
+      FROM "TodoLists" AS "tl"
+      LEFT JOIN "AspNetUsers" AS "tl.Owner" ON "tl"."OwnerId" = "tl.Owner"."Id"
+      WHERE "tl"."TodoListId" = @__todoListId_0
+      ORDER BY "tl"."TodoListId"
+      LIMIT 2
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__todoListId_0='?'], CommandType='Text', CommandTimeout='30']
+      SELECT "tl.Items"."TodoItemId", "tl.Items"."Importance", "tl.Items"."IsDone", "tl.Items"."ResponsiblePartyId", "tl.Items"."Title", "tl.Items"."TodoListId", "t.ResponsibleParty"."Id", "t.ResponsibleParty"."AccessFailedCount", "t.ResponsibleParty"."ConcurrencyStamp", "t.ResponsibleParty"."Email", "t.ResponsibleParty"."EmailConfirmed", "t.ResponsibleParty"."LockoutEnabled", "t.ResponsibleParty"."LockoutEnd", "t.ResponsibleParty"."NormalizedEmail", "t.ResponsibleParty"."NormalizedUserName", "t.ResponsibleParty"."PasswordHash", "t.ResponsibleParty"."PhoneNumber", "t.ResponsibleParty"."PhoneNumberConfirmed", "t.ResponsibleParty"."SecurityStamp", "t.ResponsibleParty"."TwoFactorEnabled", "t.ResponsibleParty"."UserName"
+      FROM "TodoItems" AS "tl.Items"
+      LEFT JOIN "AspNetUsers" AS "t.ResponsibleParty" ON "tl.Items"."ResponsiblePartyId" = "t.ResponsibleParty"."Id"
+      INNER JOIN (
+          SELECT DISTINCT "t".*
+          FROM (
+              SELECT "tl0"."TodoListId"
+              FROM "TodoLists" AS "tl0"
+              LEFT JOIN "AspNetUsers" AS "tl.Owner0" ON "tl0"."OwnerId" = "tl.Owner0"."Id"
+              WHERE "tl0"."TodoListId" = @__todoListId_0
+              ORDER BY "tl0"."TodoListId"
+              LIMIT 1
+          ) AS "t"
+      ) AS "t0" ON "tl.Items"."TodoListId" = "t0"."TodoListId"
+      ORDER BY "t0"."TodoListId"
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method Todo.Controllers.TodoItemController.Create (Todo), returned result Microsoft.AspNetCore.Mvc.ViewResult in 42.0311ms.
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor[1]
+      Executing ViewResult, running view Create.
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      PRAGMA foreign_keys=ON;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT "u"."UserName" AS "Text", "u"."Id" AS "Value"
+      FROM "AspNetUsers" AS "u"
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor[4]
+      Executed ViewResult - view Create executed in 38.0837ms.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Todo.Controllers.TodoItemController.Create (Todo) in 80.6599ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 82.658ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:52627/TodoItem/Create?TodoListId=1 application/x-www-form-urlencoded 343
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Route matched with {action = "Create", controller = "TodoItem", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Todo.Models.TodoItems.TodoItemCreateFields) on controller Todo.Controllers.TodoItemController (Todo).
+info: Microsoft.AspNetCore.Authorization.DefaultAuthorizationService[1]
+      Authorization was successful.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Todo.Controllers.TodoItemController.Create (Todo) - Validation state: Valid
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.1.11-servicing-32099 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      PRAGMA foreign_keys=ON;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@p0='?', @p1='?', @p2='?' (Size = 36), @p3='?' (Size = 12), @p4='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "TodoItems" ("Importance", "IsDone", "ResponsiblePartyId", "Title", "TodoListId")
+      VALUES (@p0, @p1, @p2, @p3, @p4);
+      SELECT "TodoItemId"
+      FROM "TodoItems"
+      WHERE changes() = 1 AND "TodoItemId" = last_insert_rowid();
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method Todo.Controllers.TodoItemController.Create (Todo), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 31.2111ms.
+info: Microsoft.AspNetCore.Mvc.RedirectToActionResult[1]
+      Executing RedirectResult, redirecting to /TodoList/Detail?todoListId=1.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Todo.Controllers.TodoItemController.Create (Todo) in 36.8981ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 41.0733ms 302
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:52627/TodoList/Detail?todoListId=1
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Route matched with {action = "Detail", controller = "TodoList", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Detail(Int32) on controller Todo.Controllers.TodoListController (Todo).
+info: Microsoft.AspNetCore.Authorization.DefaultAuthorizationService[1]
+      Authorization was successful.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Todo.Controllers.TodoListController.Detail (Todo) - Validation state: Valid
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.1.11-servicing-32099 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      PRAGMA foreign_keys=ON;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__todoListId_0='?'], CommandType='Text', CommandTimeout='30']
+      SELECT "tl"."TodoListId", "tl"."OwnerId", "tl"."Title", "tl.Owner"."Id", "tl.Owner"."AccessFailedCount", "tl.Owner"."ConcurrencyStamp", "tl.Owner"."Email", "tl.Owner"."EmailConfirmed", "tl.Owner"."LockoutEnabled", "tl.Owner"."LockoutEnd", "tl.Owner"."NormalizedEmail", "tl.Owner"."NormalizedUserName", "tl.Owner"."PasswordHash", "tl.Owner"."PhoneNumber", "tl.Owner"."PhoneNumberConfirmed", "tl.Owner"."SecurityStamp", "tl.Owner"."TwoFactorEnabled", "tl.Owner"."UserName"
+      FROM "TodoLists" AS "tl"
+      LEFT JOIN "AspNetUsers" AS "tl.Owner" ON "tl"."OwnerId" = "tl.Owner"."Id"
+      WHERE "tl"."TodoListId" = @__todoListId_0
+      ORDER BY "tl"."TodoListId"
+      LIMIT 2
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__todoListId_0='?'], CommandType='Text', CommandTimeout='30']
+      SELECT "tl.Items"."TodoItemId", "tl.Items"."Importance", "tl.Items"."IsDone", "tl.Items"."ResponsiblePartyId", "tl.Items"."Title", "tl.Items"."TodoListId", "t.ResponsibleParty"."Id", "t.ResponsibleParty"."AccessFailedCount", "t.ResponsibleParty"."ConcurrencyStamp", "t.ResponsibleParty"."Email", "t.ResponsibleParty"."EmailConfirmed", "t.ResponsibleParty"."LockoutEnabled", "t.ResponsibleParty"."LockoutEnd", "t.ResponsibleParty"."NormalizedEmail", "t.ResponsibleParty"."NormalizedUserName", "t.ResponsibleParty"."PasswordHash", "t.ResponsibleParty"."PhoneNumber", "t.ResponsibleParty"."PhoneNumberConfirmed", "t.ResponsibleParty"."SecurityStamp", "t.ResponsibleParty"."TwoFactorEnabled", "t.ResponsibleParty"."UserName"
+      FROM "TodoItems" AS "tl.Items"
+      LEFT JOIN "AspNetUsers" AS "t.ResponsibleParty" ON "tl.Items"."ResponsiblePartyId" = "t.ResponsibleParty"."Id"
+      INNER JOIN (
+          SELECT DISTINCT "t".*
+          FROM (
+              SELECT "tl0"."TodoListId"
+              FROM "TodoLists" AS "tl0"
+              LEFT JOIN "AspNetUsers" AS "tl.Owner0" ON "tl0"."OwnerId" = "tl.Owner0"."Id"
+              WHERE "tl0"."TodoListId" = @__todoListId_0
+              ORDER BY "tl0"."TodoListId"
+              LIMIT 1
+          ) AS "t"
+      ) AS "t0" ON "tl.Items"."TodoListId" = "t0"."TodoListId"
+      ORDER BY "t0"."TodoListId"
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method Todo.Controllers.TodoListController.Detail (Todo), returned result Microsoft.AspNetCore.Mvc.ViewResult in 6.84ms.
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor[1]
+      Executing ViewResult, running view Detail.
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor[4]
+      Executed ViewResult - view Detail executed in 18.6043ms.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Todo.Controllers.TodoListController.Detail (Todo) in 25.6535ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 27.4518ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:52627/TodoItem/Create?todoListId=1
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Route matched with {action = "Create", controller = "TodoItem", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create(Int32) on controller Todo.Controllers.TodoItemController (Todo).
+info: Microsoft.AspNetCore.Authorization.DefaultAuthorizationService[1]
+      Authorization was successful.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Todo.Controllers.TodoItemController.Create (Todo) - Validation state: Valid
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.1.11-servicing-32099 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      PRAGMA foreign_keys=ON;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__todoListId_0='?'], CommandType='Text', CommandTimeout='30']
+      SELECT "tl"."TodoListId", "tl"."OwnerId", "tl"."Title", "tl.Owner"."Id", "tl.Owner"."AccessFailedCount", "tl.Owner"."ConcurrencyStamp", "tl.Owner"."Email", "tl.Owner"."EmailConfirmed", "tl.Owner"."LockoutEnabled", "tl.Owner"."LockoutEnd", "tl.Owner"."NormalizedEmail", "tl.Owner"."NormalizedUserName", "tl.Owner"."PasswordHash", "tl.Owner"."PhoneNumber", "tl.Owner"."PhoneNumberConfirmed", "tl.Owner"."SecurityStamp", "tl.Owner"."TwoFactorEnabled", "tl.Owner"."UserName"
+      FROM "TodoLists" AS "tl"
+      LEFT JOIN "AspNetUsers" AS "tl.Owner" ON "tl"."OwnerId" = "tl.Owner"."Id"
+      WHERE "tl"."TodoListId" = @__todoListId_0
+      ORDER BY "tl"."TodoListId"
+      LIMIT 2
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__todoListId_0='?'], CommandType='Text', CommandTimeout='30']
+      SELECT "tl.Items"."TodoItemId", "tl.Items"."Importance", "tl.Items"."IsDone", "tl.Items"."ResponsiblePartyId", "tl.Items"."Title", "tl.Items"."TodoListId", "t.ResponsibleParty"."Id", "t.ResponsibleParty"."AccessFailedCount", "t.ResponsibleParty"."ConcurrencyStamp", "t.ResponsibleParty"."Email", "t.ResponsibleParty"."EmailConfirmed", "t.ResponsibleParty"."LockoutEnabled", "t.ResponsibleParty"."LockoutEnd", "t.ResponsibleParty"."NormalizedEmail", "t.ResponsibleParty"."NormalizedUserName", "t.ResponsibleParty"."PasswordHash", "t.ResponsibleParty"."PhoneNumber", "t.ResponsibleParty"."PhoneNumberConfirmed", "t.ResponsibleParty"."SecurityStamp", "t.ResponsibleParty"."TwoFactorEnabled", "t.ResponsibleParty"."UserName"
+      FROM "TodoItems" AS "tl.Items"
+      LEFT JOIN "AspNetUsers" AS "t.ResponsibleParty" ON "tl.Items"."ResponsiblePartyId" = "t.ResponsibleParty"."Id"
+      INNER JOIN (
+          SELECT DISTINCT "t".*
+          FROM (
+              SELECT "tl0"."TodoListId"
+              FROM "TodoLists" AS "tl0"
+              LEFT JOIN "AspNetUsers" AS "tl.Owner0" ON "tl0"."OwnerId" = "tl.Owner0"."Id"
+              WHERE "tl0"."TodoListId" = @__todoListId_0
+              ORDER BY "tl0"."TodoListId"
+              LIMIT 1
+          ) AS "t"
+      ) AS "t0" ON "tl.Items"."TodoListId" = "t0"."TodoListId"
+      ORDER BY "t0"."TodoListId"
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method Todo.Controllers.TodoItemController.Create (Todo), returned result Microsoft.AspNetCore.Mvc.ViewResult in 2.3181ms.
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor[1]
+      Executing ViewResult, running view Create.
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      PRAGMA foreign_keys=ON;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT "u"."UserName" AS "Text", "u"."Id" AS "Value"
+      FROM "AspNetUsers" AS "u"
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor[4]
+      Executed ViewResult - view Create executed in 3.5633ms.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Todo.Controllers.TodoItemController.Create (Todo) in 6.0644ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 6.6352ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:52627/TodoItem/Create?todoListId=1 application/x-www-form-urlencoded 343
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Route matched with {action = "Create", controller = "TodoItem", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Todo.Models.TodoItems.TodoItemCreateFields) on controller Todo.Controllers.TodoItemController (Todo).
+info: Microsoft.AspNetCore.Authorization.DefaultAuthorizationService[1]
+      Authorization was successful.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Todo.Controllers.TodoItemController.Create (Todo) - Validation state: Valid
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.1.11-servicing-32099 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      PRAGMA foreign_keys=ON;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@p0='?', @p1='?', @p2='?' (Size = 36), @p3='?' (Size = 12), @p4='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "TodoItems" ("Importance", "IsDone", "ResponsiblePartyId", "Title", "TodoListId")
+      VALUES (@p0, @p1, @p2, @p3, @p4);
+      SELECT "TodoItemId"
+      FROM "TodoItems"
+      WHERE changes() = 1 AND "TodoItemId" = last_insert_rowid();
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method Todo.Controllers.TodoItemController.Create (Todo), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 20.5331ms.
+info: Microsoft.AspNetCore.Mvc.RedirectToActionResult[1]
+      Executing RedirectResult, redirecting to /TodoList/Detail?todoListId=1.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Todo.Controllers.TodoItemController.Create (Todo) in 21.0419ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 21.6683ms 302
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:52627/TodoList/Detail?todoListId=1
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Route matched with {action = "Detail", controller = "TodoList", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Detail(Int32) on controller Todo.Controllers.TodoListController (Todo).
+info: Microsoft.AspNetCore.Authorization.DefaultAuthorizationService[1]
+      Authorization was successful.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Todo.Controllers.TodoListController.Detail (Todo) - Validation state: Valid
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.1.11-servicing-32099 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      PRAGMA foreign_keys=ON;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__todoListId_0='?'], CommandType='Text', CommandTimeout='30']
+      SELECT "tl"."TodoListId", "tl"."OwnerId", "tl"."Title", "tl.Owner"."Id", "tl.Owner"."AccessFailedCount", "tl.Owner"."ConcurrencyStamp", "tl.Owner"."Email", "tl.Owner"."EmailConfirmed", "tl.Owner"."LockoutEnabled", "tl.Owner"."LockoutEnd", "tl.Owner"."NormalizedEmail", "tl.Owner"."NormalizedUserName", "tl.Owner"."PasswordHash", "tl.Owner"."PhoneNumber", "tl.Owner"."PhoneNumberConfirmed", "tl.Owner"."SecurityStamp", "tl.Owner"."TwoFactorEnabled", "tl.Owner"."UserName"
+      FROM "TodoLists" AS "tl"
+      LEFT JOIN "AspNetUsers" AS "tl.Owner" ON "tl"."OwnerId" = "tl.Owner"."Id"
+      WHERE "tl"."TodoListId" = @__todoListId_0
+      ORDER BY "tl"."TodoListId"
+      LIMIT 2
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__todoListId_0='?'], CommandType='Text', CommandTimeout='30']
+      SELECT "tl.Items"."TodoItemId", "tl.Items"."Importance", "tl.Items"."IsDone", "tl.Items"."ResponsiblePartyId", "tl.Items"."Title", "tl.Items"."TodoListId", "t.ResponsibleParty"."Id", "t.ResponsibleParty"."AccessFailedCount", "t.ResponsibleParty"."ConcurrencyStamp", "t.ResponsibleParty"."Email", "t.ResponsibleParty"."EmailConfirmed", "t.ResponsibleParty"."LockoutEnabled", "t.ResponsibleParty"."LockoutEnd", "t.ResponsibleParty"."NormalizedEmail", "t.ResponsibleParty"."NormalizedUserName", "t.ResponsibleParty"."PasswordHash", "t.ResponsibleParty"."PhoneNumber", "t.ResponsibleParty"."PhoneNumberConfirmed", "t.ResponsibleParty"."SecurityStamp", "t.ResponsibleParty"."TwoFactorEnabled", "t.ResponsibleParty"."UserName"
+      FROM "TodoItems" AS "tl.Items"
+      LEFT JOIN "AspNetUsers" AS "t.ResponsibleParty" ON "tl.Items"."ResponsiblePartyId" = "t.ResponsibleParty"."Id"
+      INNER JOIN (
+          SELECT DISTINCT "t".*
+          FROM (
+              SELECT "tl0"."TodoListId"
+              FROM "TodoLists" AS "tl0"
+              LEFT JOIN "AspNetUsers" AS "tl.Owner0" ON "tl0"."OwnerId" = "tl.Owner0"."Id"
+              WHERE "tl0"."TodoListId" = @__todoListId_0
+              ORDER BY "tl0"."TodoListId"
+              LIMIT 1
+          ) AS "t"
+      ) AS "t0" ON "tl.Items"."TodoListId" = "t0"."TodoListId"
+      ORDER BY "t0"."TodoListId"
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method Todo.Controllers.TodoListController.Detail (Todo), returned result Microsoft.AspNetCore.Mvc.ViewResult in 3.518ms.
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor[1]
+      Executing ViewResult, running view Detail.
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor[4]
+      Executed ViewResult - view Detail executed in 1.1835ms.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Todo.Controllers.TodoListController.Detail (Todo) in 4.9062ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 5.5674ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:52627/
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Todo.Controllers.HomeController (Todo).
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Todo.Controllers.HomeController.Index (Todo) - Validation state: Valid
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method Todo.Controllers.HomeController.Index (Todo), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 0.0053ms.
+info: Microsoft.AspNetCore.Mvc.RedirectToActionResult[1]
+      Executing RedirectResult, redirecting to /TodoList.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Todo.Controllers.HomeController.Index (Todo) in 0.0898ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 0.5726ms 302
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:52627/TodoList
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Route matched with {action = "Index", controller = "TodoList", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Todo.Controllers.TodoListController (Todo).
+info: Microsoft.AspNetCore.Authorization.DefaultAuthorizationService[1]
+      Authorization was successful.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Todo.Controllers.TodoListController.Index (Todo) - Validation state: Valid
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.1.11-servicing-32099 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      PRAGMA foreign_keys=ON;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+      SELECT "tl"."TodoListId", "tl"."OwnerId", "tl"."Title", "tl.Owner"."Id", "tl.Owner"."AccessFailedCount", "tl.Owner"."ConcurrencyStamp", "tl.Owner"."Email", "tl.Owner"."EmailConfirmed", "tl.Owner"."LockoutEnabled", "tl.Owner"."LockoutEnd", "tl.Owner"."NormalizedEmail", "tl.Owner"."NormalizedUserName", "tl.Owner"."PasswordHash", "tl.Owner"."PhoneNumber", "tl.Owner"."PhoneNumberConfirmed", "tl.Owner"."SecurityStamp", "tl.Owner"."TwoFactorEnabled", "tl.Owner"."UserName"
+      FROM "TodoLists" AS "tl"
+      LEFT JOIN "AspNetUsers" AS "tl.Owner" ON "tl"."OwnerId" = "tl.Owner"."Id"
+      WHERE "tl"."OwnerId" = @__userId_0
+      ORDER BY "tl"."TodoListId"
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+      SELECT "tl.Items"."TodoItemId", "tl.Items"."Importance", "tl.Items"."IsDone", "tl.Items"."ResponsiblePartyId", "tl.Items"."Title", "tl.Items"."TodoListId"
+      FROM "TodoItems" AS "tl.Items"
+      INNER JOIN (
+          SELECT DISTINCT "tl0"."TodoListId"
+          FROM "TodoLists" AS "tl0"
+          LEFT JOIN "AspNetUsers" AS "tl.Owner0" ON "tl0"."OwnerId" = "tl.Owner0"."Id"
+          WHERE "tl0"."OwnerId" = @__userId_0
+      ) AS "t" ON "tl.Items"."TodoListId" = "t"."TodoListId"
+      ORDER BY "t"."TodoListId"
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method Todo.Controllers.TodoListController.Index (Todo), returned result Microsoft.AspNetCore.Mvc.ViewResult in 8.2897ms.
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor[1]
+      Executing ViewResult, running view Index.
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor[4]
+      Executed ViewResult - view Index executed in 1.5611ms.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Todo.Controllers.TodoListController.Index (Todo) in 9.965ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 10.6201ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:52627/TodoList/Create
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Route matched with {action = "Create", controller = "TodoList", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller Todo.Controllers.TodoListController (Todo).
+info: Microsoft.AspNetCore.Authorization.DefaultAuthorizationService[1]
+      Authorization was successful.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Todo.Controllers.TodoListController.Create (Todo) - Validation state: Valid
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method Todo.Controllers.TodoListController.Create (Todo), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0066ms.
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor[1]
+      Executing ViewResult, running view Create.
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.1.11-servicing-32099 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      PRAGMA foreign_keys=ON;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+      SELECT "e"."Id", "e"."AccessFailedCount", "e"."ConcurrencyStamp", "e"."Email", "e"."EmailConfirmed", "e"."LockoutEnabled", "e"."LockoutEnd", "e"."NormalizedEmail", "e"."NormalizedUserName", "e"."PasswordHash", "e"."PhoneNumber", "e"."PhoneNumberConfirmed", "e"."SecurityStamp", "e"."TwoFactorEnabled", "e"."UserName"
+      FROM "AspNetUsers" AS "e"
+      WHERE "e"."Id" = @__get_Item_0
+      LIMIT 1
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor[4]
+      Executed ViewResult - view Create executed in 3.5114ms.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Todo.Controllers.TodoListController.Create (Todo) in 3.6441ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 4.3105ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:52627/
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Todo.Controllers.HomeController (Todo).
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Todo.Controllers.HomeController.Index (Todo) - Validation state: Valid
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method Todo.Controllers.HomeController.Index (Todo), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 0.0041ms.
+info: Microsoft.AspNetCore.Mvc.RedirectToActionResult[1]
+      Executing RedirectResult, redirecting to /TodoList.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Todo.Controllers.HomeController.Index (Todo) in 0.0692ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 0.5738ms 302
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:52627/TodoList
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Route matched with {action = "Index", controller = "TodoList", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Todo.Controllers.TodoListController (Todo).
+info: Microsoft.AspNetCore.Authorization.DefaultAuthorizationService[1]
+      Authorization was successful.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Todo.Controllers.TodoListController.Index (Todo) - Validation state: Valid
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.1.11-servicing-32099 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      PRAGMA foreign_keys=ON;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+      SELECT "tl"."TodoListId", "tl"."OwnerId", "tl"."Title", "tl.Owner"."Id", "tl.Owner"."AccessFailedCount", "tl.Owner"."ConcurrencyStamp", "tl.Owner"."Email", "tl.Owner"."EmailConfirmed", "tl.Owner"."LockoutEnabled", "tl.Owner"."LockoutEnd", "tl.Owner"."NormalizedEmail", "tl.Owner"."NormalizedUserName", "tl.Owner"."PasswordHash", "tl.Owner"."PhoneNumber", "tl.Owner"."PhoneNumberConfirmed", "tl.Owner"."SecurityStamp", "tl.Owner"."TwoFactorEnabled", "tl.Owner"."UserName"
+      FROM "TodoLists" AS "tl"
+      LEFT JOIN "AspNetUsers" AS "tl.Owner" ON "tl"."OwnerId" = "tl.Owner"."Id"
+      WHERE "tl"."OwnerId" = @__userId_0
+      ORDER BY "tl"."TodoListId"
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+      SELECT "tl.Items"."TodoItemId", "tl.Items"."Importance", "tl.Items"."IsDone", "tl.Items"."ResponsiblePartyId", "tl.Items"."Title", "tl.Items"."TodoListId"
+      FROM "TodoItems" AS "tl.Items"
+      INNER JOIN (
+          SELECT DISTINCT "tl0"."TodoListId"
+          FROM "TodoLists" AS "tl0"
+          LEFT JOIN "AspNetUsers" AS "tl.Owner0" ON "tl0"."OwnerId" = "tl.Owner0"."Id"
+          WHERE "tl0"."OwnerId" = @__userId_0
+      ) AS "t" ON "tl.Items"."TodoListId" = "t"."TodoListId"
+      ORDER BY "t"."TodoListId"
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method Todo.Controllers.TodoListController.Index (Todo), returned result Microsoft.AspNetCore.Mvc.ViewResult in 2.6593ms.
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor[1]
+      Executing ViewResult, running view Index.
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor[4]
+      Executed ViewResult - view Index executed in 1.0874ms.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Todo.Controllers.TodoListController.Index (Todo) in 3.8799ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 4.338ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:52627/TodoList/Detail?todoListId=1
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Route matched with {action = "Detail", controller = "TodoList", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Detail(Int32) on controller Todo.Controllers.TodoListController (Todo).
+info: Microsoft.AspNetCore.Authorization.DefaultAuthorizationService[1]
+      Authorization was successful.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Todo.Controllers.TodoListController.Detail (Todo) - Validation state: Valid
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.1.11-servicing-32099 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      PRAGMA foreign_keys=ON;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__todoListId_0='?'], CommandType='Text', CommandTimeout='30']
+      SELECT "tl"."TodoListId", "tl"."OwnerId", "tl"."Title", "tl.Owner"."Id", "tl.Owner"."AccessFailedCount", "tl.Owner"."ConcurrencyStamp", "tl.Owner"."Email", "tl.Owner"."EmailConfirmed", "tl.Owner"."LockoutEnabled", "tl.Owner"."LockoutEnd", "tl.Owner"."NormalizedEmail", "tl.Owner"."NormalizedUserName", "tl.Owner"."PasswordHash", "tl.Owner"."PhoneNumber", "tl.Owner"."PhoneNumberConfirmed", "tl.Owner"."SecurityStamp", "tl.Owner"."TwoFactorEnabled", "tl.Owner"."UserName"
+      FROM "TodoLists" AS "tl"
+      LEFT JOIN "AspNetUsers" AS "tl.Owner" ON "tl"."OwnerId" = "tl.Owner"."Id"
+      WHERE "tl"."TodoListId" = @__todoListId_0
+      ORDER BY "tl"."TodoListId"
+      LIMIT 2
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__todoListId_0='?'], CommandType='Text', CommandTimeout='30']
+      SELECT "tl.Items"."TodoItemId", "tl.Items"."Importance", "tl.Items"."IsDone", "tl.Items"."ResponsiblePartyId", "tl.Items"."Title", "tl.Items"."TodoListId", "t.ResponsibleParty"."Id", "t.ResponsibleParty"."AccessFailedCount", "t.ResponsibleParty"."ConcurrencyStamp", "t.ResponsibleParty"."Email", "t.ResponsibleParty"."EmailConfirmed", "t.ResponsibleParty"."LockoutEnabled", "t.ResponsibleParty"."LockoutEnd", "t.ResponsibleParty"."NormalizedEmail", "t.ResponsibleParty"."NormalizedUserName", "t.ResponsibleParty"."PasswordHash", "t.ResponsibleParty"."PhoneNumber", "t.ResponsibleParty"."PhoneNumberConfirmed", "t.ResponsibleParty"."SecurityStamp", "t.ResponsibleParty"."TwoFactorEnabled", "t.ResponsibleParty"."UserName"
+      FROM "TodoItems" AS "tl.Items"
+      LEFT JOIN "AspNetUsers" AS "t.ResponsibleParty" ON "tl.Items"."ResponsiblePartyId" = "t.ResponsibleParty"."Id"
+      INNER JOIN (
+          SELECT DISTINCT "t".*
+          FROM (
+              SELECT "tl0"."TodoListId"
+              FROM "TodoLists" AS "tl0"
+              LEFT JOIN "AspNetUsers" AS "tl.Owner0" ON "tl0"."OwnerId" = "tl.Owner0"."Id"
+              WHERE "tl0"."TodoListId" = @__todoListId_0
+              ORDER BY "tl0"."TodoListId"
+              LIMIT 1
+          ) AS "t"
+      ) AS "t0" ON "tl.Items"."TodoListId" = "t0"."TodoListId"
+      ORDER BY "t0"."TodoListId"
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method Todo.Controllers.TodoListController.Detail (Todo), returned result Microsoft.AspNetCore.Mvc.ViewResult in 2.8974ms.
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor[1]
+      Executing ViewResult, running view Detail.
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor[4]
+      Executed ViewResult - view Detail executed in 0.82ms.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Todo.Controllers.TodoListController.Detail (Todo) in 4.0572ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 4.641ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:52627/TodoItem/Edit?todoItemId=1
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Route matched with {action = "Edit", controller = "TodoItem", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Edit(Int32) on controller Todo.Controllers.TodoItemController (Todo).
+info: Microsoft.AspNetCore.Authorization.DefaultAuthorizationService[1]
+      Authorization was successful.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Todo.Controllers.TodoItemController.Edit (Todo) - Validation state: Valid
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.1.11-servicing-32099 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      PRAGMA foreign_keys=ON;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__todoItemId_0='?'], CommandType='Text', CommandTimeout='30']
+      SELECT "ti"."TodoItemId", "ti"."Importance", "ti"."IsDone", "ti"."ResponsiblePartyId", "ti"."Title", "ti"."TodoListId", "ti.TodoList"."TodoListId", "ti.TodoList"."OwnerId", "ti.TodoList"."Title"
+      FROM "TodoItems" AS "ti"
+      INNER JOIN "TodoLists" AS "ti.TodoList" ON "ti"."TodoListId" = "ti.TodoList"."TodoListId"
+      WHERE "ti"."TodoItemId" = @__todoItemId_0
+      LIMIT 2
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method Todo.Controllers.TodoItemController.Edit (Todo), returned result Microsoft.AspNetCore.Mvc.ViewResult in 16.7841ms.
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor[1]
+      Executing ViewResult, running view Edit.
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      PRAGMA foreign_keys=ON;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT "u"."UserName" AS "Text", "u"."Id" AS "Value"
+      FROM "AspNetUsers" AS "u"
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      PRAGMA foreign_keys=ON;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+      SELECT "e"."Id", "e"."AccessFailedCount", "e"."ConcurrencyStamp", "e"."Email", "e"."EmailConfirmed", "e"."LockoutEnabled", "e"."LockoutEnd", "e"."NormalizedEmail", "e"."NormalizedUserName", "e"."PasswordHash", "e"."PhoneNumber", "e"."PhoneNumberConfirmed", "e"."SecurityStamp", "e"."TwoFactorEnabled", "e"."UserName"
+      FROM "AspNetUsers" AS "e"
+      WHERE "e"."Id" = @__get_Item_0
+      LIMIT 1
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor[4]
+      Executed ViewResult - view Edit executed in 38.4924ms.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Todo.Controllers.TodoItemController.Edit (Todo) in 55.4507ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 56.8815ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:52627/TodoList/Detail?todoListId=1
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Route matched with {action = "Detail", controller = "TodoList", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Detail(Int32) on controller Todo.Controllers.TodoListController (Todo).
+info: Microsoft.AspNetCore.Authorization.DefaultAuthorizationService[1]
+      Authorization was successful.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Todo.Controllers.TodoListController.Detail (Todo) - Validation state: Valid
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.1.11-servicing-32099 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      PRAGMA foreign_keys=ON;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__todoListId_0='?'], CommandType='Text', CommandTimeout='30']
+      SELECT "tl"."TodoListId", "tl"."OwnerId", "tl"."Title", "tl.Owner"."Id", "tl.Owner"."AccessFailedCount", "tl.Owner"."ConcurrencyStamp", "tl.Owner"."Email", "tl.Owner"."EmailConfirmed", "tl.Owner"."LockoutEnabled", "tl.Owner"."LockoutEnd", "tl.Owner"."NormalizedEmail", "tl.Owner"."NormalizedUserName", "tl.Owner"."PasswordHash", "tl.Owner"."PhoneNumber", "tl.Owner"."PhoneNumberConfirmed", "tl.Owner"."SecurityStamp", "tl.Owner"."TwoFactorEnabled", "tl.Owner"."UserName"
+      FROM "TodoLists" AS "tl"
+      LEFT JOIN "AspNetUsers" AS "tl.Owner" ON "tl"."OwnerId" = "tl.Owner"."Id"
+      WHERE "tl"."TodoListId" = @__todoListId_0
+      ORDER BY "tl"."TodoListId"
+      LIMIT 2
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__todoListId_0='?'], CommandType='Text', CommandTimeout='30']
+      SELECT "tl.Items"."TodoItemId", "tl.Items"."Importance", "tl.Items"."IsDone", "tl.Items"."ResponsiblePartyId", "tl.Items"."Title", "tl.Items"."TodoListId", "t.ResponsibleParty"."Id", "t.ResponsibleParty"."AccessFailedCount", "t.ResponsibleParty"."ConcurrencyStamp", "t.ResponsibleParty"."Email", "t.ResponsibleParty"."EmailConfirmed", "t.ResponsibleParty"."LockoutEnabled", "t.ResponsibleParty"."LockoutEnd", "t.ResponsibleParty"."NormalizedEmail", "t.ResponsibleParty"."NormalizedUserName", "t.ResponsibleParty"."PasswordHash", "t.ResponsibleParty"."PhoneNumber", "t.ResponsibleParty"."PhoneNumberConfirmed", "t.ResponsibleParty"."SecurityStamp", "t.ResponsibleParty"."TwoFactorEnabled", "t.ResponsibleParty"."UserName"
+      FROM "TodoItems" AS "tl.Items"
+      LEFT JOIN "AspNetUsers" AS "t.ResponsibleParty" ON "tl.Items"."ResponsiblePartyId" = "t.ResponsibleParty"."Id"
+      INNER JOIN (
+          SELECT DISTINCT "t".*
+          FROM (
+              SELECT "tl0"."TodoListId"
+              FROM "TodoLists" AS "tl0"
+              LEFT JOIN "AspNetUsers" AS "tl.Owner0" ON "tl0"."OwnerId" = "tl.Owner0"."Id"
+              WHERE "tl0"."TodoListId" = @__todoListId_0
+              ORDER BY "tl0"."TodoListId"
+              LIMIT 1
+          ) AS "t"
+      ) AS "t0" ON "tl.Items"."TodoListId" = "t0"."TodoListId"
+      ORDER BY "t0"."TodoListId"
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method Todo.Controllers.TodoListController.Detail (Todo), returned result Microsoft.AspNetCore.Mvc.ViewResult in 2.1178ms.
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor[1]
+      Executing ViewResult, running view Detail.
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor[4]
+      Executed ViewResult - view Detail executed in 0.7049ms.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Todo.Controllers.TodoListController.Detail (Todo) in 2.9605ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 3.428ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:52627/
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Todo.Controllers.HomeController (Todo).
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Todo.Controllers.HomeController.Index (Todo) - Validation state: Valid
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method Todo.Controllers.HomeController.Index (Todo), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 0.0071ms.
+info: Microsoft.AspNetCore.Mvc.RedirectToActionResult[1]
+      Executing RedirectResult, redirecting to /TodoList.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Todo.Controllers.HomeController.Index (Todo) in 0.1099ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 0.5958ms 302
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:52627/TodoList
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Route matched with {action = "Index", controller = "TodoList", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Todo.Controllers.TodoListController (Todo).
+info: Microsoft.AspNetCore.Authorization.DefaultAuthorizationService[1]
+      Authorization was successful.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Todo.Controllers.TodoListController.Index (Todo) - Validation state: Valid
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.1.11-servicing-32099 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      PRAGMA foreign_keys=ON;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+      SELECT "tl"."TodoListId", "tl"."OwnerId", "tl"."Title", "tl.Owner"."Id", "tl.Owner"."AccessFailedCount", "tl.Owner"."ConcurrencyStamp", "tl.Owner"."Email", "tl.Owner"."EmailConfirmed", "tl.Owner"."LockoutEnabled", "tl.Owner"."LockoutEnd", "tl.Owner"."NormalizedEmail", "tl.Owner"."NormalizedUserName", "tl.Owner"."PasswordHash", "tl.Owner"."PhoneNumber", "tl.Owner"."PhoneNumberConfirmed", "tl.Owner"."SecurityStamp", "tl.Owner"."TwoFactorEnabled", "tl.Owner"."UserName"
+      FROM "TodoLists" AS "tl"
+      LEFT JOIN "AspNetUsers" AS "tl.Owner" ON "tl"."OwnerId" = "tl.Owner"."Id"
+      WHERE "tl"."OwnerId" = @__userId_0
+      ORDER BY "tl"."TodoListId"
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+      SELECT "tl.Items"."TodoItemId", "tl.Items"."Importance", "tl.Items"."IsDone", "tl.Items"."ResponsiblePartyId", "tl.Items"."Title", "tl.Items"."TodoListId"
+      FROM "TodoItems" AS "tl.Items"
+      INNER JOIN (
+          SELECT DISTINCT "tl0"."TodoListId"
+          FROM "TodoLists" AS "tl0"
+          LEFT JOIN "AspNetUsers" AS "tl.Owner0" ON "tl0"."OwnerId" = "tl.Owner0"."Id"
+          WHERE "tl0"."OwnerId" = @__userId_0
+      ) AS "t" ON "tl.Items"."TodoListId" = "t"."TodoListId"
+      ORDER BY "t"."TodoListId"
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method Todo.Controllers.TodoListController.Index (Todo), returned result Microsoft.AspNetCore.Mvc.ViewResult in 2.0853ms.
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor[1]
+      Executing ViewResult, running view Index.
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor[4]
+      Executed ViewResult - view Index executed in 0.6577ms.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Todo.Controllers.TodoListController.Index (Todo) in 2.8458ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 3.2146ms 200 text/html; charset=utf-8
+Application is shutting down...
+^C
